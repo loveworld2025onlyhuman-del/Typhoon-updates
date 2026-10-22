@@ -59,3 +59,4 @@ $('export').onclick=async()=>{tone();const copy=$('map').cloneNode(true);copy.se
 try{const saved=JSON.parse(localStorage.getItem('wind-island'));if(saved&&Number.isFinite(saved.time)){t=Math.max(0,Math.min(100,saved.time));$('save').setAttribute('aria-pressed','true')}}catch{}
 document.addEventListener('visibilitychange',()=>{last=0;frames=[]});render();playState();requestAnimationFrame(frame);
 </script></body></html>
+<!---->
